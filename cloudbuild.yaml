@@ -1,5 +1,4 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['deployment-manager', 'deployments', 'update', 'craquelin-minecraft', '--config', 'config.yaml']
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'instances', 'add-metadata', 'craquelin-minecraft', '--metadata-from-file', 'startup-script=startup.sh']
+  
