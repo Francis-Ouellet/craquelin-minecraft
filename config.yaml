@@ -16,7 +16,5 @@ resources:
           accessConfigs:
             - name: External NAT
               type: ONE_TO_ONE_NAT
-      metadata:
-        items:
-          - key: startup-script
-            value: ./startup.sh
+      metadata-from-file:
+        startup-script: startup.sh
