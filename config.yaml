@@ -20,4 +20,10 @@ resources:
         items:
           - key: startup-script-url
             value: gs://craquelin-web.appspot.com/start.sh
+      accessControl:
+        gcIamPolicy:
+          bindings:
+          - role: roles/storage.admin
+            members:
+            - "666757427670-compute@developer.gserviceaccount.com"
               
