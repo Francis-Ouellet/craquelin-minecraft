@@ -16,12 +16,13 @@ resources:
           accessConfigs:
             - name: External NAT
               type: ONE_TO_ONE_NAT
-      scopes:
-        - https://www.googleapis.com/auth/devstorage.read_only
       metadata:
         items:
           - key: startup-script-url
             value: gs://craquelin-web.appspot.com/start.sh
+    serviceAccounts:
+      scopes:
+        - https://www.googleapis.com/auth/devstorage.read_only
     accessControl:
       gcIamPolicy:
         bindings:
