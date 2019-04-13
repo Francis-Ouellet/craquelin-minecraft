@@ -6,7 +6,7 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['deployment-manager', 'deployments', 'update', 'craquelin-minecraft', '--config', 'config.yaml']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'instances', 'stop', 'craquelin-minecraft']
+  args: ['compute', 'instances', 'stop', 'craquelin-minecraft', '--zone', 'us-east1-d']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'instances', 'start', 'craquelin-minecraft']
+  args: ['compute', 'instances', 'start', 'craquelin-minecraft', '--zone', 'us-east1-d']
   
