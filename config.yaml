@@ -21,8 +21,9 @@ resources:
           - key: startup-script-url
             value: gs://craquelin-web.appspot.com/start.sh
       serviceAccounts:
-        scopes:
-          - https://www.googleapis.com/auth/devstorage.read_only
+        - email: default
+          scopes:
+            - https://www.googleapis.com/auth/devstorage.read_only
     accessControl:
       gcIamPolicy:
         bindings:
