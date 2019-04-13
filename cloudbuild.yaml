@@ -1,4 +1,8 @@
 steps:
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp', 'start.sh', 'gs://craquelin-web.appspot.com/start.sh']
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp', '-r', 'minecraftconfigs', 'gs://craquelin-web.appspot.com/minecraftconfigs/']
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['deployment-manager', 'deployments', 'update', 'craquelin-minecraft', '--config', 'config.yaml']
   
