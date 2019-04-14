@@ -1,9 +1,6 @@
 resources:
   - type: compute.v1.instance
     name: minecraft
-    tags:
-      items:
-        - minecraft
     properties:
       zone: us-east1-d
       machineType: https://www.googleapis.com/compute/v1/projects/craquelin-web/zones/us-east1-d/machineTypes/n1-standard-1
@@ -19,6 +16,9 @@ resources:
           accessConfigs:
             - name: External NAT
               type: ONE_TO_ONE_NAT
+      tags:
+        items:
+          - minecraft
       metadata:
         items:
           - key: startup-script-url
