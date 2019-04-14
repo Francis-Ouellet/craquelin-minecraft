@@ -24,10 +24,4 @@ resources:
         - email: default
           scopes:
             - https://www.googleapis.com/auth/devstorage.read_only
-    accessControl:
-      gcIamPolicy:
-        bindings:
-        - role: roles/storage.admin
-          members:
-          - "666757427670-compute@developer.gserviceaccount.com"
-              
+                      
