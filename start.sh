@@ -5,5 +5,5 @@ cd /home/minecraft
 sudo su
 gsutil cp gs://craquelin-web.appspot.com/minecraftconfigs/eula.txt eula.txt
 gsutil cp gs://craquelin-web.appspot.com/minecraftconfigs/server.properties server.properties
-curl https://launcher.mojang.com/v1/objects/6f27430bcd9b06d3dcb5d2966c75d5e491915c9c/server.jar > server.jar
+curl https://launcher.mojang.com/v1/objects/353cc74b9aefd4675730449f50f5c0066063ac3f/server.jar > server.jar
 java -Xms1G -Xmx3G -d64 -jar server.jar nogui
