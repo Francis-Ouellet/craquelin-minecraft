@@ -2,7 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/gsutil'
   args: ['cp', 'start.sh', 'gs://craquelin-web.appspot.com/start.sh']
 - name: 'gcr.io/cloud-builders/gsutil'
-  args: ['cp', '-r', 'minecraftconfigs', 'gs://craquelin-web.appspot.com/']
+  args: ['-m', 'cp', '-r', 'minecraftconfigs', 'gs://craquelin-web.appspot.com/']
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['compute', 'instances', 'stop', 'minecraft', '--zone', 'us-east1-d']
 - name: 'gcr.io/cloud-builders/gcloud'
